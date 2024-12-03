@@ -1,3 +1,7 @@
+.hidden {
+    display: none;
+}
+
 body {
     font-family: 'Roboto',sans-serif;
     background-color: #FFFFFF;
@@ -31,9 +35,7 @@ button {
     cursor: pointer;
 }
 .container {
-   /* width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;*/
+   
     max-width: 320px;
     padding-left: 16px;
     padding-right: 16px;
@@ -41,6 +43,55 @@ button {
     
 
 
+}
+.mobile {
+    /*width: 320px;
+    min-height: 640px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    box-shadow:  0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px; */
+   
+}
+.mobile-menu-nav {
+    margin-bottom: auto;
+}
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2); 
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.mobile-menu-container {
+    position: relative;
+    padding-top: 72px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.mobile-menu-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
 }
 /*----------------------------------------header----------------------------------------*/
 .header {
@@ -56,6 +107,12 @@ button {
     display: flex;
     align-items: center;
 }
+.header-menu-list{
+    display: none;
+}
+.header-contacts-list {
+    display: none;
+}
 .header-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -64,7 +121,8 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color:  #4d5ae5;
-    margin-right: 76px;
+    padding: 16px 0px;
+    display: block;
 }
 .header-logo-roman {
     font-family: "Raleway", sans-serif;;
@@ -76,8 +134,17 @@ button {
     color: #2e2f42;;
 }
 .header-menu-list {
-    display: flex;
+   /* display: flex;*/
     gap: 40px;
+}
+.burger-btn {
+     padding: 0;
+     border: none;
+     background-color: transparent;
+}
+.burger-icon {
+    display: block;
+    fill: #2f2f37;
 }
 .header-menu-link {
     font-weight: 500;
@@ -124,7 +191,7 @@ button {
 }
 
 .header-contacts-list {
-    display: flex; 
+   /* display: flex; */
     gap: 40px;
    
    
@@ -156,8 +223,6 @@ button {
         ), 
         url(../images/Dark-bg-mob.jpg);
     background-size: cover;
-    /*padding-top: 188px;
-    padding-bottom: 188px;*/
     padding-top: 96px;
     padding-bottom: 96px;
     max-width: 1440px;
@@ -184,7 +249,6 @@ button {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    /*margin-bottom: 48px;*/
      margin-bottom: 72px;
     text-align: center;
     color: #fff;
@@ -223,8 +287,6 @@ button {
 }
 /*----------------------------------hiro-------------------------------------*/
 .features {
-   /* padding-top: 120px;
-    padding-bottom: 120px;*/
     padding-top: 96px;
     padding-bottom: 96px;
 } 
@@ -232,11 +294,9 @@ button {
  .features-list {
     display: flex;
     flex-wrap: wrap;
-    /*gap: 24px; */
     gap: 72px; 
  } 
  .features-item {
-   /* flex-basis: calc((100% - 3 * 24px) / 4);*/
    width: 100%;
  }
  
@@ -284,23 +344,14 @@ button {
 /*--------------------------------------features-------------------------------------*/
 .team {
    background:  #f4f4fd; 
-  /*padding-top: 120px;
-   padding-bottom: 120px;*/
    padding-top: 96px;
    padding-bottom: 96px;
    
    
 }
 .team-list {
-   /* display: flex;*/
     flex-wrap: nowrap;
-  /* gap: 24px;*/
-  gap: 72px;
-  /* padding: 32px 16px;*/
-   
-   
-   
-   
+    gap: 72px;
    
 }
 .team-item {
@@ -394,16 +445,12 @@ button {
 }
 /*---------------------------------------team------------------------------------*/
 .portfolio {
-   /* padding-top: 120px;
-    padding-bottom: 120px;*/
     padding-top: 96px;
     padding-bottom: 96px;
 }
 .portfolio-list {
     display: flex;
    flex-wrap: wrap;
-   /* column-gap: 24px;
-    row-gap: 48px;*/
     gap: 48px;
     
     
@@ -411,7 +458,6 @@ button {
 }
 .portfolio-item {
     background: #fff;
-   /* flex-basis: calc((100% - 3 * 24px) / 3);*/
     border-radius:  0px 0px 4px 4px; 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
@@ -442,7 +488,6 @@ button {
     margin-bottom: 72px;
 }
 .container-portfolio {
-   /* padding: 32px 16px;*/
    padding: 48px 16px;
     border: 1px solid #e7e9fc; 
     border-top: none;
@@ -497,8 +542,6 @@ button {
 /*-------------------------------------------Porfolio----------------------------------*/
 .footer {
     background: #2e2f42;
-   /* padding-top: 100px;
-    padding-bottom: 100px;*/
     padding-top: 96px;
     padding-bottom: 96px;
     
@@ -624,9 +667,7 @@ margin-bottom: 16px;
    
 }
 .footer-form{
-    /*display: flex;*/
     flex-wrap: wrap;
-   /* gap: 24px;*/
    gap: 16px;
 
 }
@@ -715,7 +756,6 @@ margin-bottom: 16px;
     pointer-events: auto;
 }
 .modal {
-   /* width: 408px;*/
    width: 288px;
     min-height: 584px;
     background-color:  #fcfcfc;
@@ -946,10 +986,30 @@ color: #4d5ae5;*/
 
 /*------------------Media--------------------*/
 @media screen and (min-width: 768px) {
+.mobile-menu {
+    display: none;
+}
 .header-contacts-list {
     flex-direction: column;
     gap: 12px;
+    display: flex;
 
+}
+.header-menu-list {
+    display: flex;
+}
+.header-contacts-link {
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+   
+
+}
+.burger-btn {
+   display: none; 
+}
+.header-logo  {
+   margin-right: 120px;
 }
 .hiro {
     background-image: linear-gradient(
@@ -976,9 +1036,7 @@ color: #4d5ae5;*/
     
 .container {
    max-width: 768px;
-   /*display: flex;
-   flex-wrap: wrap;
-   gap: 72px 24px;*/
+  
 
 } 
 
@@ -1056,9 +1114,23 @@ color: #4d5ae5;*/
     }
 }
 @media screen and (min-width: 1158px) {
+.mobile-menu {
+    display: none;
+}
 .header-contacts-list {
     flex-direction: row;
+    display: flex;
     
+}
+.header-menu-list {
+    display: flex;
+}
+.header-logo {
+    margin-right: 76px;
+    padding: 24px 0px;
+}
+.burger-btn {
+    display: none;
 }
 .hiro {
     background-image: linear-gradient(
@@ -1114,7 +1186,7 @@ color: #4d5ae5;*/
 
 .features-list {
     gap: 24px; 
-    /*padding: 32px 16px;*/
+    
     
 }
 
@@ -1154,17 +1226,6 @@ color: #4d5ae5;*/
 .footer {
     padding-top: 100px;
     padding-bottom: 100px;
-}
-
-.container-logo {
-   /* margin-right: 156px;*/
-   
-}
-
-
-.footer-form {
-    /*display: flex;*/
-    gap: 24px;
 }
 .container-footer {
    flex-wrap: nowrap;

@@ -32,10 +32,73 @@
                 </li>
             </ul>
            </address>
+           <button class="burger-btn"type="button">
+            <svg class="burger-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-burger-btn"></use>
+            </svg>
+        </button>
+        </div>
+        <div class="mobile-menu.is-open">
+            <div class="container mobile-menu-container">
+                <div class="mobile">
+                    <button type="button" class="mobile-menu-close">
+                        <svg class="mobile-menu-btn" width="8" height="8">
+                            <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
+                        </svg>
+                    </button>
+                    <nav class="mobile-menu-nav">
+                    <ul class="mobile-menu-list">
+                        <li class="mobile-menu-item"><a class="mobile-menu-link active" href="./index.html">Studio</a></li>
+                        <li class="mobile-menu-item"><a class="mobile-menu-link" href="">Portfolio</a></li>
+                        <li class="mobile-menu-item"><a class="mobile-menu-link" href="">Contacts</a></li>
+                    </ul>
+                                </nav>
+                                <address class="mobile-address">
+                    <ul class="mobile-contacts-list">
+                        <li class="mobile-contacts-item">
+                            <a class="mobile-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="mobile-contacts-item">
+                            <a class="mobile-contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+                    </ul>
+                                   </address>
+                                   <ul class="mobile-icons">
+                    <li class="mobile-icons-icon">
+                        <a class="mobile-icon-link" href="">
+                        <svg class="mobile-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-instagram-2-1"></use>
+                        </svg>
+                    </a>
+                    </li>
+                    <li class="mobile-icons-icon">
+                        <a class="mobile-icon-link" href="">
+                        <svg class="mobile-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-twitter-1-1"></use>
+                        </svg>
+                    </a>
+                    </li>
+                    <li class="mobile-icons-icon">
+                        <a class="mobile-icon-link" href="">
+                        <svg class="mobile-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-facebook-1-1"></use>
+                        </svg>
+                    </a>
+                    </li>
+                    <li class="mobile-icons-icon">
+                        <a class="mobile-icon-link" href="">
+                            <svg class="mobile-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-linkedin-1-1"></use>
+                        </svg>
+                    </a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <main>
-    <section class="hiro">
+    <section class="hiro hidden">
         <div class="container">
     <h1 class="hiro-title">Effective Solutions
         for Your Business</h1>
@@ -43,7 +106,7 @@
         <button class="hiro-btn" type="button">Order Service</button>
     </div>
     </section>
-    <section class="features">
+    <section class="features hidden">
         <div class="container">
         <h2 class="visually-hidden">Reatures</h2>
         <ul class="features-list">
@@ -104,7 +167,7 @@
          </ul>
         </div>
             </section>
-            <section class="team">
+            <section class="team hidden">
                 <div class="container">
              <h2 class="team-subtitle-team">Our Team</h2>
              <ul class="team-list">
@@ -278,7 +341,7 @@
              </ul>
             </div>
             </section>
-          <section class="portfolio">
+          <section class="portfolio hidden">
                 <div class="container">
                 <h2 class="portfolio-subtitle-portfolio">Our Portfolio</h2>
                 
@@ -298,6 +361,12 @@
                             ./images/img-mob-2x.jpg 2x"
                             media="(min-width: 320px)"
                             />
+                            <source 
+                            srcset="
+                            ./images/img1x.jpg 1x,
+                            ./images/img2x.jpg 2x"
+                            media="(min-width: 1158px)"
+                            />
                             <img class="portfolio-product-image"
                                src="./images/img5.jpg" 
                                alt="Banking App" 
@@ -314,18 +383,24 @@
                 <li class="portfolio-item">
                     <div class="portfolio-cover-wrapper">
                         <picture>
-                           <!-- <source 
+                            <source 
                             srcset="
-                            ./images/img-tab-1x.2.jpg 1x,
-                            ./images/img-tab-2x.2.jpg 2x"
+                            ./images/img-tab-1x-2.jpg 1x,
+                            ./images/img-tab-2x-2.jpg 2x"
                             media="(min-width: 768px)"
                             />
                             <source 
                             srcset="
-                            ./images/img-mob-1x.2.jpg 1x,
-                            ./images/img-mob-2x.2.jpg 2x"
+                            ./images/img-mob-1x-2.jpg 1x,
+                            ./images/img-mob-2x-2.jpg 2x"
                             media="(min-width: 320px)"
-                            />-->
+                            />
+                            <source 
+                            srcset="
+                            ./images/img1x-2.jpg 1x,
+                            ./images/img2x-2.jpg 2x"
+                            media="(min-width: 1158px)"
+                            />
                             <img class="portfolio-product-image" 
                                  src="./images/img6.jpg" 
                                  alt="Cashless Payment" 
@@ -342,18 +417,24 @@
                 <li class="portfolio-item">
                     <div class="portfolio-cover-wrapper">
                         <picture>
-                           <!-- <source 
+                            <source 
                             srcset="
-                            ./images/img-tab-1x.3.jpg 1x,
-                            ./images/img-tab-2x.3.jpg 2x"
+                            ./images/img-tab-1x-3.jpg 1x,
+                            ./images/img-tab-2x-3.jpg 2x"
                             media="(min-width: 768px)"
                             />
                             <source 
                             srcset="
-                            ./images/img-mob-1x.3.jpg 1x,
-                            ./images/img-mob-2x.3.jpg 2x"
+                            ./images/img-mob-1x-3.jpg 1x,
+                            ./images/img-mob-2x-3.jpg 2x"
                             media="(max-width: 320px)"
-                            />-->
+                            />
+                            <source 
+                            srcset="
+                            ./images/img1x-3.jpg 1x,
+                            ./images/img2x-3.jpg 2x"
+                            media="(max-width: 1158px)"
+                            />
                             <img class="portfolio-product-image" 
                                src="./images/img7.jpg" 
                                alt="Meditation App" 
@@ -370,18 +451,24 @@
                 <li class="portfolio-item">
                     <div class="portfolio-cover-wrapper">
                         <picture>
-                           <!-- <source 
+                            <source 
                             srcset="
-                            ./images/img-tab-1x.4.jpg 1x,
-                            ./images/img-tab-2x.4.jpg 2x"
+                            ./images/img-tab-1x-4.jpg 1x,
+                            ./images/img-tab-2x-4.jpg 2x"
                             media="(min-width: 768px)"
                             />
                             <source 
                             srcset="
-                            ./images/img-mob-1x.4.jpg 1x,
-                            ./images/img-mob-2x.4.jpg 2x"
+                            ./images/img-mob-1x-4.jpg 1x,
+                            ./images/img-mob-2x-4.jpg 2x"
                             media="(min-width: 320px)"
-                            />-->
+                            />
+                            <source 
+                            srcset="
+                            ./images/img1x-4.jpg 1x,
+                            ./images/img2x-4.jpg 2x"
+                            media="(min-width: 1158px)"
+                            />
                             <img  class="portfolio-product-image"
                             src="./images/img8.jpg" 
                             alt="Taxi Service" 
@@ -398,18 +485,24 @@
                 <li class="portfolio-item">
                     <div class="portfolio-cover-wrapper">
                         <picture>
-                            <!--<source 
+                            <source 
                             srcset="
-                            ./images/img-tab-1x.5.jpg 1x,
-                            ./images/img-tab-2x.5.jpg 2x"
+                            ./images/img-tab-1x-5.jpg 1x,
+                            ./images/img-tab-2x-5.jpg 2x"
                             media="(min-width: 768px)"
                             />
                             <source 
                             srcset="
-                            ./images/img-mob-1x.5.jpg 1x,
-                            ./images/img-mob-2x.5.jpg 2x"
+                            ./images/img-mob-1x-5.jpg 1x,
+                            ./images/img-mob-2x-5.jpg 2x"
                             media="(max-width: 320px)"
-                            />-->
+                            />
+                            <source 
+                            srcset="
+                            ./images/img1x-5.jpg 1x,
+                            ./images/img2x-5.jpg 2x"
+                            media="(max-width: 1158px)"
+                            />
                             <img class="portfolio-product-image" 
                              src="./images/img9.jpg" 
                              alt="Screen Illustrations"
@@ -426,18 +519,24 @@
                 <li class="portfolio-item">
                     <div class="portfolio-cover-wrapper">
                         <picture>
-                           <!--<source 
+                           <source 
                             srcset="
-                            ./images/img-tab-1x.6.jpg 1x,
-                            ./images/img-tab-2x.6.jpg 2x"
+                            ./images/img-tab-1x-6.jpg 1x,
+                            ./images/img-tab-2x-6.jpg 2x"
                             media="(min-width: 768px)"
                             />
                             <source 
                             srcset="
-                            ./images/img-mob-1x.6.jpg 1x,
-                            ./images/img-mob-2x.6.jpg 2x"
+                            ./images/img-mob-1x-6.jpg 1x,
+                            ./images/img-mob-2x-6.jpg 2x"
                             media="(max-width: 320px)"
-                            />-->
+                            />
+                            <source 
+                            srcset="
+                            ./images/img1x-6.jpg 1x,
+                            ./images/img2x-6.jpg 2x"
+                            media="(max-width: 1158px)"
+                            />
                             <img  class="portfolio-product-image"
                               src="./images/img10.jpg" 
                               alt="Online Courses" 
@@ -458,7 +557,7 @@
             </section>
         </main>
             
-               <footer class="footer">
+               <footer class="footer hidden">
                     <div class="container-footer containerr">
                         <div class="container-logo">
                     <a class="footer-logo" href="./index.html">Web<span class="footer-logo-roman">Studio</span></a>
@@ -525,7 +624,7 @@
             </div>
         </div>
          </footer>
-         <div class="backgrop">
+         <div class="backgrop hidden">
             <div class="modal">
             <button type="button" class="modal-open">
                 
