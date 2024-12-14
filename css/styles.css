@@ -1142,7 +1142,9 @@ color: #4d5ae5;*/
 .features-list {
     gap: 72px 24px;
 }
-
+.features-subtitle {
+    text-align: left;
+}
 
 .team-list {
     gap: 64px 24px;
@@ -1197,7 +1199,7 @@ color: #4d5ae5;*/
 
 .footer-subtitle {
     max-width: 264px;
-    text-align: left;
+    justify-content: flex-start;
 }
 .footer-form {
     display: flex;
