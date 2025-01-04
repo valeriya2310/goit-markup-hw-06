@@ -1,6 +1,4 @@
-.hidden {
-   /* display: none;*/
-}
+
 
 body {
     font-family: 'Roboto',sans-serif;
@@ -209,7 +207,6 @@ button {
     color: #2e2f42;;
 }
 .header-menu-list {
-   /* display: flex;*/
     gap: 40px;
 }
 .burger-btn {
@@ -268,17 +265,10 @@ button {
     
 }
 
-.header-contacts-list {
-   /* display: flex; */
-   /* gap: 40px;*/
-   
-   
-   
-}
 
 .header-contacts-link {
     font-weight: 400;
-    font-size: 16px;****
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
@@ -696,7 +686,6 @@ margin-bottom: 16px;
 
 }
 .container-footer {
-   /*display: flex;*/
     flex-wrap:wrap;
     align-items: baseline;
     
@@ -714,7 +703,7 @@ margin-bottom: 16px;
 .footer-icons-icon {
     width: 40px;
     height: 40px;
-    /*margin-bottom: 72px;*/
+   
     
     
     
@@ -725,7 +714,7 @@ margin-bottom: 16px;
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #4d5ae5;;
+    background-color: #4d5ae5;
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -746,11 +735,8 @@ margin-bottom: 16px;
     background-color: #31D0AA;
 }
 .footer-top {
-   /* display: flex;*/
    align-items: center;
    justify-content: center;
-   /*margin-left: 80px;*/
-   /*margin-left: 56px;*/
    text-align: center;
    
    
@@ -775,9 +761,7 @@ margin-bottom: 16px;
    
    
 }
-.footer-blok {
-   
-}
+
 .footer-input-emall {
     font-size: 12px; 
     line-height: 2; 
@@ -921,13 +905,7 @@ margin-bottom: 16px;
 .modal-check-field {
     margin-bottom: 24px;
 }
-.modal-input {
-  /* width: 100%;
-   border: 1px solid #4d5ae5;
-   border-radius: 4px;
-   height: 40px;
-   padding-left: 38px;*/
-}
+
 .modal-input {
     width: 100%;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -1061,13 +1039,7 @@ margin-bottom: 16px;
 .modal-span-text {
     color:  #4d5ae5; ;
 }
-span {
- /*  line-height: 1.33;
-text-decoration: underline;
-text-decoration-skip-ink: none;
-color: #4d5ae5;*/
 
-}
 .modal-check:checked + .modal-check-text span {
     background-color:  #404bbf;
     border: none;
@@ -1361,7 +1333,7 @@ color: #4d5ae5;*/
     margin-right: 80px;
 }
 .footer-subtitle  {
-    text-align: left;****
+    text-align: left;
 }
 .footer-input-emall {
     width: 264px;
